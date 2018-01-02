@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /*.pdf
+Allow: /
+Host: https://unitemp.ru/

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="build/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="build/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/favicon/favicon-16x16.png">
+    <meta rel="shortcut icon" type="image/x-icon" href="build/favicon/favicon.ico">
+    <link rel="manifest" href="build/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="build/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Работа водителем такси в Москве - Unitemp</title><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="build/css/style.css@v5.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <script type="text/javascript">
+      (function (w, d, nv, ls, yac) {
+          var lwait = function (w, on, trf, dly, ma, orf, osf) {
+              var pfx = "ct_await_", sfx = "_completed";
+              if (!w[pfx + on + sfx]) {
+                  var ci = clearInterval, si = setInterval, st = setTimeout, cmld = function () {
+                      if (!w[pfx + on + sfx]) {
+                          w[pfx + on + sfx] = true;
+                          if ((w[pfx + on] && (w[pfx + on].timer))) {
+                              ci(w[pfx + on].timer);
+                              w[pfx + on] = null;
+                          }
+                          orf(w[on]);
+                      }
+                  };
+                  if (!w[on] || !osf) {
+                      if (trf(w[on])) {
+                          cmld();
+                      } else {
+                          if (!w[pfx + on]) {
+                              w[pfx + on] = {
+                                  timer: si(function () {
+                                      if (trf(w[on]) || ma < ++w[pfx + on].attempt) {
+                                          cmld();
+                                      }
+                                  }, dly), attempt: 0
+                              };
+                          }
+                      }
+                  } else {
+                      if (trf(w[on])) {
+                          cmld();
+                      } else {
+                          osf(cmld);
+                          st(function () {
+                              lwait(w, on, trf, dly, ma, orf);
+                          }, 0);
+                      }
+                  }
+              }
+          };
+          var ct = function (w, d, e, c, n) {
+              var a = 'all', b = 'tou', src = b + 'c' + 'h';
+              src = 'm' + 'o' + 'd.c' + a + src;
+              var jsHost = "https://" + src, p = d.getElementsByTagName(e)[0], s = d.createElement(e);
+              var jsf = function (w, d, p, s, h, c, n, yc) {
+                  if (yc !== null) {
+                      lwait(w, 'yaCounter' + yc, function (obj) {
+                          return (obj && obj.getClientID ? true : false);
+                      }, 50, 100, function (yaCounter) {
+                          s.async = 1;
+                          s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (yaCounter && yaCounter.getClientID ? "ya_client_id" + yaCounter.getClientID() + ";" : "") + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":170523}") + ";";
+                          p.parentNode.insertBefore(s, p);
+                      }, function (f) {
+                          if (w.jQuery) {
+                              w.jQuery(d).on('yacounter' + yc + 'inited', f);
+                          }
+                      });
+                  } else {
+                      s.async = 1;
+                      s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":170523}") + ";";
+                      p.parentNode.insertBefore(s, p);
+                  }
+              };
+              if (!w.jQuery) {
+                  var jq = d.createElement(e);
+                  jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js';
+                  jq.onload = function () {
+                      lwait(w, 'jQuery', function (obj) {
+                          return (obj ? true : false);
+                      }, 30, 100, function () {
+                          jsf(w, d, d.getElementsByTagName(e)[0], s, jsHost, c, n, yac);
+                      });
+                  };
+                  p.parentNode.insertBefore(jq, p);
+              } else {
+                  jsf(w, d, p, s, jsHost, c, n, yac);
+              }
+          };
+          var gaid = function (w, d, o, ct, n) {
+              if (!!o) {
+                  lwait(w, o, function (obj) {
+                      return (obj && obj.getAll ? true : false);
+                  }, 200, (nv.userAgent.match(/Opera|OPR\//) ? 10 : 20), function (gaCounter) {
+                      var clId = null;
+                      try {
+                          var cnt = gaCounter && gaCounter.getAll ? gaCounter.getAll() : null;
+                          clId = cnt && cnt.length > 0 && !!cnt[0] && cnt[0].get ? cnt[0].get('clientId') : null;
+                      } catch (e) {
+                          console.warn("Unable to get clientId, Error: " + e.message);
+                      }
+                      ct(w, d, 'script', clId, n);
+                  }, function (f) {
+                      w[o](function () {
+                          f(w[o]);
+                      })
+                  });
+              } else {
+                  ct(w, d, 'script', null, n);
+              }
+          };
+          var cid = function () {
+              try {
+                  var m1 = d.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
+                  if (!(m1 && m1.length > 1)) return null;
+                  var m2 = decodeURIComponent(m1[1]).match(/(\d+\.\d+)$/);
+                  if (!(m2 && m2.length > 1)) return null;
+                  return m2[1]
+              } catch (err) {
+              }
+          }();
+          if (cid === null && !!w.GoogleAnalyticsObject) {
+              if (w.GoogleAnalyticsObject == 'ga_ckpr') w.ct_ga = 'ga'; else w.ct_ga = w.GoogleAnalyticsObject;
+              if (typeof Promise !== "undefined" && Promise.toString().indexOf("[native code]") !== -1) {
+                  new Promise(function (resolve) {
+                      var db, on = function () {
+                          resolve(true)
+                      }, off = function () {
+                          resolve(false)
+                      }, tryls = function tryls() {
+                          try {
+                              ls && ls.length ? off() : (ls.x = 1, ls.removeItem("x"), off());
+                          } catch (e) {
+                              nv.cookieEnabled ? on() : off();
+                          }
+                      };
+                      w.webkitRequestFileSystem ? webkitRequestFileSystem(0, 0, off, on) : "MozAppearance" in d.documentElement.style ? (db = indexedDB.open("test"), db.onerror = on, db.onsuccess = off) : /constructor/i.test(w.HTMLElement) ? tryls() : !w.indexedDB && (w.PointerEvent || w.MSPointerEvent) ? on() : off();
+                  }).then(function (pm) {
+                      if (pm) {
+                          gaid(w, d, w.ct_ga, ct, 2);
+                      } else {
+                          gaid(w, d, w.ct_ga, ct, 3);
+                      }
+                  })
+              } else {
+                  gaid(w, d, w.ct_ga, ct, 4);
+              }
+          } else {
+              ct(w, d, 'script', cid, 1);
+          }
+      })
+      (window, document, navigator, localStorage, "45168720");
+      
+      
+      
+      
+    </script>
+    <script charset="UTF-8" src="https://cdn.sendpulse.com/28edd3380a1c17cf65b137fe96516659/js/push/1278b2dbd25a513170b20562e8aee888_1.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-container">
+          <div class="header-logo"><img class="header-logo__img" src="build/img/global/logo.png"></div>
+          <nav class="header-navigation">
+            <ul class="header-navigation-list">
+              <li class="header-navigation-list__item"><a class="header-navigation-list__link js-to-block" href="index.html#" data-id="#earnings">ВАШ ДОХОД</a></li>
+              <li class="header-navigation-list__item"><a class="header-navigation-list__link js-to-block" href="index.html#" data-id="#steps">КАК НАЧАТЬ</a></li>
+              <li class="header-navigation-list__item"><a class="header-navigation-list__link js-to-block" href="index.html#" data-id="#slider-tabs">УСЛОВИЯ</a></li>
+              <li class="header-navigation-list__item"><a class="header-navigation-list__link js-to-block" href="index.html#" data-id="#otzyvy">ОТЗЫВЫ</a></li>
+            </ul>
+          </nav>
+          <div class="header-telephone"><a class="header-telephone__link" href="tel:+78007077556">+7 (800) 707 75 56</a></div>
+          <div class="header-button"><a class="button button_header" data-fancybox data-src="#send-form" href="javascript:;">ЗАКАЗАТЬ ЗВОНОК</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="main-banner">
+      <div class="container">
+        <div class="main-banner-heading-container">
+          <h1 class="main-banner-heading-container__heading">
+            РАБОТА ВОДИТЕЛЕМ <br>
+            <strong>ТАКСИ В МОСКВЕ</strong>
+          </h1>
+          <h2 class="main-banner-heading-container__heading main-banner-heading-container__heading_down">
+            ЗАРАБАТЫВАЙ С НАМИ <br>
+            ОТ <strong>60 000 РУБ</strong> В МЕСЯЦ
+            
+          </h2><a class="button button_main-banner hide-mobile js-to-block" href="index.html#" data-id="#steps">УЗНАТЬ ПОДРОБНОСТИ</a><a class="button button_main-banner visible-mobile js-to-block" href="index.html#" data-id="#steps-mobile">УЗНАТЬ ПОДРОБНОСТИ</a>
+        </div>
+                <form class="form form_main-banner">
+                  <h4 class="form__heading form__heading_main-banner">Заявка на работу</h4>
+                  <div class="form-container">
+                    <label class="label">
+                      <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                    </label>
+                    <label class="label">
+                      <input class="input" type="text" name="name" placeholder="Ваше имя">
+                    </label><a class="button button_main-banner-form js-send-form" href="index.html#">ОТПРАВИТЬ</a>
+                  </div>
+                </form>
+      </div>
+    </section>
+    <section class="company-preview">
+      <div class="container">
+        <h2 class="company-preview__heading">Узнать всё о работе в Unitemp за 1 минуту</h2>
+        <div class="company-preview-container">
+          <div class="company-preview-video-block">
+            <iframe src="https://www.youtube.com/embed/HicTZY3YF8g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information">
+      <div class="container">
+        <h2 class="information__heading">С НАМИ ВЫ ПОЛУЧИТЕ:</h2>
+        <div class="information-cards"><a class="information-card js-to-block" href="index.html#" data-id="#slider-tabs" data-item="1">
+            <div class="information-card-content"><img class="information-card-content__img" src="build/img/modules/information/1.jpg">
+              <p class="information-card-content__text">АРЕНДА АВТО</p>
+            </div>
+            <div class="information-card-button"><span class="information-card-button__button">ПОДРОБНЕЕ</span></div></a><a class="information-card js-to-block" href="index.html#" data-id="#slider-tabs" data-item="3">
+            <div class="information-card-content"><img class="information-card-content__img" src="build/img/modules/information/2.jpg">
+              <p class="information-card-content__text">ТРЁХРАЗОВОЕ<br> ПИТАНИЕ</p>
+            </div>
+            <div class="information-card-button"><span class="information-card-button__button">ПОДРОБНЕЕ</span></div></a><a class="information-card js-to-block" href="index.html#" data-id="#slider-tabs" data-item="2">
+            <div class="information-card-content"><img class="information-card-content__img" src="build/img/modules/information/3.jpg">
+              <p class="information-card-content__text">ХОСТЕЛ</p>
+            </div>
+            <div class="information-card-button"><span class="information-card-button__button">ПОДРОБНЕЕ</span></div></a></div>
+        <div class="information-text-block">
+          <div class="information-text-block__text">И ВСЁ ЭТО ЗА <strong>2 340 РУБ</strong> В ДЕНЬ!</div>
+        </div>
+      </div>
+    </section>
+    <section class="earnings" id="earnings">
+      <div class="container">
+        <h2 class="earnings__heading">Сколько ты сможешь зарабатывать:</h2>
+        <div class="earnings-container">
+          <div class="earnings-block">
+            <h3 class="earnings-block__heading">
+              СРЕДНЯЯ ВЫРУЧКА <br>
+              ВОДИТЕЛЯ ЗА ДЕНЬ
+              
+            </h3>
+            <p class="earnings-block__big">6 500 РУБ</p>
+            <div class="earnings-block-icon"><span class="earnings-block-icon__text">24 ДНЯ</span><img class="earnings-block-icon__img" src="build/img/modules/earnings/icons/1.svg"></div>
+          </div>
+          <div class="earnings-block earnings-block_minus">
+            <h3 class="earnings-block__heading">
+              ПЛАТА ЗА АРЕНДУ АВТО, <br>
+              ЖИЛЬЕ И ПИТАНИЕ <br>
+              ЗА ДЕНЬ
+              
+            </h3>
+            <p class="earnings-block__big">2 340 РУБ</p>
+            <div class="earnings-block-icon"><span class="earnings-block-icon__text">30 ДНЕЙ</span><img class="earnings-block-icon__img" src="build/img/modules/earnings/icons/2.svg"></div>
+          </div>
+          <div class="earnings-block earnings-block_minus earnings-block_top-minus">
+            <h3 class="earnings-block__heading">
+              ПЛАТА ЗА БЕНЗИН <br>
+              ЗА ДЕНЬ
+              
+            </h3>
+            <p class="earnings-block__big">1 000 РУБ</p>
+            <div class="earnings-block-icon"><span class="earnings-block-icon__text">24 ДНЯ</span><img class="earnings-block-icon__img" src="build/img/modules/earnings/icons/3.svg"></div>
+          </div>
+          <div class="earnings-block earnings-block_equally">
+            <h3 class="earnings-block__heading">
+              ЧИСТАЯ ПРИБЫЛЬ <br>
+              ЗА 1 МЕСЯЦ РАБОТЫ
+              
+            </h3>
+            <p class="earnings-block__big earnings-block__big_very-big">60 000<span class="earnings-block__hidden-text"> РУБ</span></p>
+            <div class="earnings-block-icon"><img class="earnings-block-icon__img" src="build/img/modules/earnings/icons/4.svg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages" id="best">
+      <div class="container">
+        <h2 class="heading">Преимущества работы с нами</h2>
+        <div class="advantages-items">
+          <div class="advantages-item advantages-item_red"><img class="advantages-item__img" src="build/img/modules/advantages/1.svg">
+            <div class="advantages-item__text">
+              Помогаем <br>
+              с переездом
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>
+                Встречаем на вокзале<br><br>
+                Провожаем до хостела<br><br>
+                Компенсируем частично оплату проезда до Москвы (1000 руб.)
+                
+              </p>
+            </div>
+          </div>
+          <div class="advantages-item advantages-item_orange"><img class="advantages-item__img" src="build/img/modules/advantages/2.svg">
+            <div class="advantages-item__text">
+              Оформляем <br>
+              за 1 день
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>
+                Оформляем за 1 день. <br><br>
+                Просто оставьте заявку и с вами сразу свяжутся
+                
+              </p>
+            </div>
+          </div>
+          <div class="advantages-item advantages-item_red advantages-item_big-icon"><img class="advantages-item__img advantages-item__img_big-icon" src="build/img/modules/advantages/3.svg">
+            <div class="advantages-item__text advantages-item__text_big-icon">
+              Подключаем к <br>
+              популярным службам <br>
+              поиска клиентов
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>
+                Работаем с самыми популярными службами поиска клиентов: Uber, Яндекс, Ситимобил
+                
+                
+                
+              </p>
+            </div>
+          </div>
+          <div class="advantages-item advantages-item_orange"><img class="advantages-item__img" src="build/img/modules/advantages/4.svg">
+            <div class="advantages-item__text">
+              Плановое ТО <br>
+              <strong>бесплатно</strong>!
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>
+                Плановое ТО (замена масла, расходников, резины) за счет компании
+                
+                
+              </p>
+            </div>
+          </div>
+          <div class="advantages-item advantages-item_red"><img class="advantages-item__img" src="build/img/modules/advantages/5.svg">
+            <div class="advantages-item__text">
+              Ежедневные <br>
+              выплаты
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>
+                Ежедневные выплаты
+                
+                
+              </p>
+            </div>
+          </div>
+          <div class="advantages-item advantages-item_orange"><img class="advantages-item__img" src="build/img/modules/advantages/6.svg">
+            <div class="advantages-item__text">
+              Первый день <br>
+              проживания и <br>
+              питания <strong>бесплатно!</strong>
+              
+            </div>
+            <div class="advantages-item-hide">
+              <p>Первый день проживания и питания бесплатно!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps" id="steps">
+      <div class="container">
+        <h2 class="heading heading_small heading_steps">3 ШАГА, ЧТОБЫ НАЧАТЬ РАБОТАТЬ</h2>
+        <div class="steps-container">
+          <div class="steps-line-container">
+            <div class="steps-item">
+              <p class="steps-item__number">1</p>
+              <div class="steps-item-img-container"><img class="steps-item-img-container__img" src="build/img/modules/steps/document-icon.svg"></div>
+              <h4 class="steps-item__heading">
+                Подать заявление<br> на сайте
+                
+              </h4>
+              <p class="steps-item__text">
+                Наши специалисты свяжутся с вами <br>
+                в течение 10 минут для проведения <br>
+                собеседования
+                
+              </p>
+            </div>
+            <div class="steps-item">
+              <p class="steps-item__number">2</p>
+              <div class="steps-item-img-container"><img class="steps-item-img-container__img" src="build/img/modules/steps/car-icon.svg"></div>
+              <h4 class="steps-item__heading">
+                Получить автомобиль
+                
+              </h4>
+              <p class="steps-item__text">
+                Вам не нужно приезжать на <br>
+                своем автомобиле. Мы вам его <br>
+                предоставим!
+                
+                
+              </p>
+            </div>
+          </div>
+          <div class="steps-line-container">
+            <div class="steps-item">
+              <p class="steps-item__number">3</p>
+              <div class="steps-item-img-container"><img class="steps-item-img-container__img steps-item-img-container__img_flag" src="build/img/modules/steps/flag-icon.svg"></div>
+              <h4 class="steps-item__heading">
+                Выход на линию через <br>
+                1 день после собеседования
+                
+              </h4>
+              <p class="steps-item__text">
+                Весь процесс от момента собеседования <br>
+                до выхода на линию - 1 день!
+                
+              </p>
+            </div>
+                        <form class="form form_steps" id="steps-mobile">
+                          <h4 class="form__heading form__heading_steps">Заявка на работу</h4>
+                          <div class="form-container form-container_steps">
+                            <label class="label">
+                              <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                            </label>
+                            <label class="label">
+                              <input class="input" type="text" name="name" placeholder="Ваше имя">
+                            </label><a class="button button_steps js-send-form" href="index.html#">ОТПРАВИТЬ</a>
+                          </div>
+                        </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation">
+      <div class="container">
+        <div class="cooperation-orders-block">
+          <h3 class="cooperation__heading">ОТКУДА ВЫ БУДЕТЕ ПОЛУЧАТЬ ЗАКАЗЫ</h3><img class="cooperation__img" src="build/img/modules/cooperation/uber-icon.svg"><img class="cooperation__img" src="build/img/modules/cooperation/ya-taxi-icon.svg">
+        </div>
+        <div class="cooperation-our-partners">
+          <h3 class="cooperation__heading cooperation__heading_down">НАШИ ПАРТНЕРЫ</h3><img class="cooperation__img" src="build/img/modules/cooperation/city-mobil-icon.svg"><img class="cooperation__img" src="build/img/modules/cooperation/beritaxi-icon.svg">
+        </div>
+      </div>
+    </section>
+    <section class="form-picture">
+      <div class="container">
+        <div class="form-picture-container">
+          <div class="form-picture-form-block">
+            <h2 class="form-picture-form-block__heading">
+              ЧТОБЫ НАЧАТЬ РАБОТУ С <br>
+              UNITEMP, ОСТАВЬТЕ ЗАЯВКУ
+              
+            </h2>
+                        <form class="form form_form-picture">
+                          <h4 class="form__heading">Заявка на работу</h4>
+                          <div class="form-container">
+                            <label class="label">
+                              <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                            </label>
+                            <label class="label">
+                              <input class="input" type="text" name="name" placeholder="Ваше имя">
+                            </label><a class="button button_form js-send-form" href="index.html#">ОТПРАВИТЬ</a>
+                          </div>
+                        </form>
+          </div>
+          <div class="form-picture-img-block">
+            <h2 class="form-picture-form-block__heading form-picture-form-block__heading_information">
+              ТРЕБОВАНИЯ К ВОДИТЕЛЯМ
+              
+            </h2>
+            <p class="form-picture-img-block__text">
+              СТАРШЕ <strong>21 ГОДА</strong> <br>
+              ИМЕЕШЬ СТАЖ <strong>3 ГОДА</strong> <br>
+              ГРАЖДАНИН <strong>РФ</strong> ИЛИ <strong>РБ</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider-tabs" id="slider-tabs">
+      <div class="container">
+        <h2 class="heading">Что тебя ждет</h2>
+        <div class="slider-tabs-block"><a class="slider-tabs-block__tab js-slider-tab active" href="index.html#" data-slider-tab-name="1">АВТОМОБИЛИ</a><a class="slider-tabs-block__tab js-slider-tab" href="index.html#" data-slider-tab-name="2">ХОСТЕЛ</a><a class="slider-tabs-block__tab js-slider-tab" href="index.html#" data-slider-tab-name="3">ПИТАНИЕ</a></div>
+        <div class="slider-tabs-container active" data-slider-tab-name="1">
+          <div class="js-slider">
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/cars/1.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/cars/2.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/cars/3.jpg"></div>
+          </div>
+        </div>
+        <div class="slider-tabs-container" data-slider-tab-name="2">
+          <div class="js-slider">
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/5.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/2.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/1.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/3.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/4.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/6.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/7.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/8.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/hotel/9.jpg"></div>
+          </div>
+        </div>
+        <div class="slider-tabs-container" data-slider-tab-name="3">
+          <div class="slider-tabs-menu">
+            <h3 class="slider-tabs-menu__heading">Примерное меню</h3>
+            <ul class="slider-tabs-menu-list">
+              <li class="slider-tabs-menu-list__item slider-tabs-menu-list__item_heading">Завтрак</li>
+              <li class="slider-tabs-menu-list__item">Омлет с колбасой/каша</li>
+              <li class="slider-tabs-menu-list__item">Булочка</li>
+              <li class="slider-tabs-menu-list__item">Чай</li>
+            </ul>
+            <ul class="slider-tabs-menu-list">
+              <li class="slider-tabs-menu-list__item slider-tabs-menu-list__item_heading">Обед</li>
+              <li class="slider-tabs-menu-list__item">Салат "Картофельный с сельдью"</li>
+              <li class="slider-tabs-menu-list__item">Суп гороховый с копченностями</li>
+              <li class="slider-tabs-menu-list__item">Зразы куриные с грибами с пюре картофельным</li>
+              <li class="slider-tabs-menu-list__item">Булочка</li>
+              <li class="slider-tabs-menu-list__item">Компот</li>
+            </ul>
+            <ul class="slider-tabs-menu-list">
+              <li class="slider-tabs-menu-list__item slider-tabs-menu-list__item_heading">Ужин</li>
+              <li class="slider-tabs-menu-list__item">Салат "Оливье"</li>
+              <li class="slider-tabs-menu-list__item">Запеканка картофельная с мясом</li>
+              <li class="slider-tabs-menu-list__item">Чай</li>
+              <li class="slider-tabs-menu-list__item">Булочка</li>
+            </ul>
+          </div>
+          <div class="js-slider">
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/1.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/2.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/4.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/5.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/6.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/7.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/8.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/9.jpg"></div>
+            <div class="slider-tabs-item"><img class="slider-tabs-item__img" src="build/img/modules/slider-tabs/eat/10.jpg"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="review" id="otzyvy">
+      <div class="container">
+        <h2 class="heading heading_review">Отзывы водителей о работе в Unitemp</h2>
+        <div class="review-slider"><a class="review-slide" data-fancybox="gallery" href="https://www.youtube.com/watch?v=8h-94sWRUfM&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img class="review-slide__img" src="build/img/modules/review/1.jpg"><span class="review-slide__timeline">3:32</span></a><a class="review-slide" data-fancybox="gallery" href="https://www.youtube.com/watch?v=bxM8y6IIhe0&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img class="review-slide__img" src="build/img/modules/review/2.jpg"><span class="review-slide__timeline">1:56</span></a><a class="review-slide" data-fancybox="gallery" href="https://www.youtube.com/watch?v=aGqBQ0JvL2s&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img class="review-slide__img" src="build/img/modules/review/3.jpg"><span class="review-slide__timeline">1:44</span></a><a class="review-slide" data-fancybox="gallery" href="https://www.youtube.com/watch?v=9A7deSBgM6w&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0g"><img class="review-slide__img" src="build/img/modules/review/4.jpg"><span class="review-slide__timeline">2:28</span></a><a class="review-slide" data-fancybox="gallery" href="https://www.youtube.com/watch?v=VvvmsIUkyz0&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"><img class="review-slide__img" src="build/img/modules/review/5.jpg"><span class="review-slide__timeline">1:51</span></a></div>
+      </div>
+    </section>
+    <section class="questions" id="faq">
+      <div class="container">
+        <h2 class="heading">Часто задаваемые вопросы</h2>
+        <ul class="questions-container">
+          <li class="questions-item js-accordion active">
+            <h3 class="questions-item__heading">Буду ли я обеспечен заказами?</h3>
+            <p class="questions-item__text">
+              Заказов всегда много, важно работать и быть на линии все 11 часов, есть часы с наибольшим спросом, есть часы с меньшей нагрузкой.
+              Работы всегда много.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Каких операторов подключаете? Где брать заказы?</h3>
+            <p class="questions-item__text">
+              UBER, Яндекс, Ситимобил, собственная служба заказов, в том числе корпоративные заказы.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Средняя стоимость поездки, сколько заказов нужно выполнить?</h3>
+            <p class="questions-item__text">
+              Стоимость поездок и количество заказов всегда разные, самое главное быть на линии, принимать заказы и
+              качественно выполнять их, так как от оценок пассажиров зависит ваша работа (при низкой оценке могут заблокировать).
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Какие тарифы за км, за минуту?</h3>
+            <p class="questions-item__text">
+              Все тарифы вы можете узнать в нашем центре обучения во время первого дня обучения.
+              Также все тарифы приведены на сайтах Uber, Яндекс.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Как я буду получать мои деньги?</h3>
+            <p class="questions-item__text">
+              Поездки бывают за наличные и по картам (через приложение), наличные вы можете оставлять у себя, безнал
+              выплачивается раз в неделю в автопарке, там же в автопарке вы получаете путевые листы и показываете свой автомобиль
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Какие мои расходы, кто делает ТО автомобиля?</h3>
+            <p class="questions-item__text">
+              Аренда авто, проживание, 3-х разовое питание входит в наш платеж 2340 рублей.
+              Плановое ТО (замена масла, расходников, резины) автомобиля осуществляется за счет автопарка, вы не участвуете в этом.
+              
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Расходы за бензин и мойку?</h3>
+            <p class="questions-item__text">
+              Бензин и мойку вы осуществляете за свой счет. За смену в 12 часов бензина уходит где-то на 1000 рублей
+              (в зависимости от километража за смену). Мойка от 250 рублей за кузов и коврики, также есть мойки самообслуживания, где стоимость от 100 рублей.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Могут ли меня кинуть на деньги или отказать в выплатах?</h3>
+            <p class="questions-item__text">
+              Часть денег вы получаете наличными и они сразу остаются у вас после поездки и лишь часть, оплаченная картами, идёт на еженедельные
+              выплаты. Мы честно работаем с нашими водителями, что подтверждается нашим долгим сотрудничеством с Uber и Яндекс.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Какую сумму мне надо взять с собой?</h3>
+            <p class="questions-item__text">
+              Первый день вы приезжаете и не оплачиваете за проживание, в этот день вы проходите обучение и выходите на линию. Со второго дня вам необходимо придерживаться положительного
+              баланса за автомобиль и проживание. Деньги можно вносить наличными через QIWI терминал, или поддерживать баланс поездками.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Потребуется ли мне планшет, телефон? Или все дадут на месте?</h3>
+            <p class="questions-item__text">
+              Если у вас уже есть планшет или смартфон, с которого вам удобно пользоваться навигатором и приложениями (Яндекс, Uber),
+              то лучше его взять с собой. Также вам потребуется отдельный телефон-"звонилка" для связи с пассажирами.
+              Если есть держатель для планшета (холдер на стекло или панель), зарядка от прикуривателя с USB, возьмите и их.
+              Если чего-то нет, мы предоставим вам оборудование в аренду от 50 рублей/сутки
+              
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Что еще взять с собой?</h3>
+            <p class="questions-item__text">
+              Рекомендуем взять с собой комплект сменной одежды. Лучше всего для работы в такси подойдут темные брюки или
+              джинсы, закрытая обувь (не кроссовки), рубашка поло или другая неспортивная одежда.
+              
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Что входит в 3-х разовое питание? Как мне питаться в машине во время смены?</h3>
+            <p class="questions-item__text">
+              Всё продумано и сделано максимально удобно! Мы привозим в хостел еду в контейнерах: завтрак, обед и ужин,
+              включая первые и вторые блюда. Этого вполне достаточно, чтобы не покупать и не готовить еду в течение дня,
+              так как это дополнительные расходы времени, и лучше в это время работать или отдыхать.
+              Такую еду удобно взять с собой в авто и перекусить во время обеденного перерыва, не возвращаясь в хостел.
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Проживание - какие там условия?</h3>
+            <p class="questions-item__text">
+              Мы предоставляем чистый и комфортабельный хостел в Москве, оборудованный всем необходимым.
+              Мы гарантируем вам наличие удобных спальных мест, чистых душевых кабин,
+              стиральной машины, холодильника и всего того, что может потребоваться для хорошего отдыха после рабочего дня.
+              Также в хостеле имеется специально место для курения, но вот распивать алкогольные напитки там запрещено -
+              пожалуйста, обратите на это внимание, так как за нарушение этого правила последует выселение. Мы обещаем
+              всем проживающим тишину и спокойствие!
+              
+              
+            </p>
+          </li>
+          <li class="questions-item js-accordion">
+            <h3 class="questions-item__heading">Какие способы оплаты услуг Unitemp существуют?</h3>
+            <p class="questions-item__text">Банковскими картами систем MasterCard и Visa, а также наличными через терминалы или кассиров в магазинах.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="inline-form">
+      <div class="container">
+        <form class="form form_inline-form">
+          <h4 class="form__heading form__heading_steps">Заявка на работу</h4>
+          <div class="form-container form-container_inline-block">
+            <label class="label label_inline">
+              <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+            </label>
+            <label class="label label_inline">
+              <input class="input" type="text" name="name" placeholder="Ваше имя">
+            </label><a class="button button_inline-form js-send-form" href="index.html#">ОТПРАВИТЬ</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="hide"><a class="done btn-modal" data-fancybox="done" data-src="#done" href="javascript:;"></a>
+      <div class="modal" id="done">
+        <h5 class="modal__heading">Заявка на работу</h5>
+        <div class="modal-content">
+          <p class="modal-content__text">
+            СПАСИБО ЗА ЗАЯВКУ!
+            
+          </p>
+        </div><a class="button button_modal" href="index.html#">ОСТАВИТЬ ЕЩЕ ОДНУ</a>
+      </div>
+    </div>
+    <div class="hide">
+      <div class="modal" id="send-form">
+        <h5 class="modal__heading">Заказать звонок</h5>
+        <form class="form form_modal">
+          <label class="label">
+            <input class="input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+          </label>
+          <label class="label">
+            <input class="input" type="text" name="name" placeholder="Ваше имя">
+          </label><a class="button button_form js-send-form" href="index.html#">ОТПРАВИТЬ</a>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-logo"><img class="footer-logo__img" src="build/img/global/logo.png"></div>
+          <nav class="footer-navigation">
+            <ul class="footer-navigation-list">
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link js-to-block" href="index.html#" data-id="#earnings">ВАШ ДОХОД</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link js-to-block" href="index.html#" data-id="#steps">КАК НАЧАТЬ</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link js-to-block" href="index.html#" data-id="#slider-tabs">УСЛОВИЯ</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link js-to-block" href="index.html#" data-id="#otzyvy">ОТЗЫВЫ</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="contacts-and-requisites.html" target="_blank">КОНТАКТЫ И РЕКВИЗИТЫ</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="offer.pdf" target="_blank">ОФЕРТА</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="online-payment.html" target="_blank">ОНЛАЙН ОПЛАТА КАРТОЙ</a></li>
+              <li class="footer-navigation-list__item"><a class="footer-navigation-list__link" href="refund.html" target="_blank">ВОЗВРАТ ПЛАТЕЖА</a></li>
+            </ul>
+          </nav>
+          <ul class="footer-telephone">
+            <li><a class="footer-telephone__link" href="tel:+78007077556">+7 (800) 707 75 56</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="build/js/main.js@v5"></script>
+    <script>
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function () {
+              try {
+                  w.yaCounter45168720 = new Ya.Metrika({
+                      id: 45168720,
+                      clickmap: true,
+                      trackLinks: true,
+                      accurateTrackBounce: true,
+                      webvisor: true,
+                      triggerEvent: true
+                  });
+              } catch (e) {
+              }
+          });
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () {
+                  n.parentNode.insertBefore(s, n);
+              };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+              f();
+          }
+      })
+      (document, window, "yandex_metrika_callbacks");
+      
+    </script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
+              (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-102307909-1', 'auto');
+      ga('send', 'pageview');
+      
+      
+    </script>
+    <script>
+      (function (w, d, s, h, id) {
+          w.roistatProjectId = id;
+          w.roistatHost = h;
+          var p = d.location.protocol == "https:" ? "https://" : "http://";
+          var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init";
+          var js = d.createElement(s);
+          js.charset = "UTF-8";
+          js.async = 1;
+          js.src = p + h + u;
+          var js2 = d.getElementsByTagName(s)[0];
+          js2.parentNode.insertBefore(js, js2);
+      })(window, document, 'script', 'cloud.roistat.com', '43d6a890bc45f1605c19676b413e6561');
+      
+      
+    </script>
+    <script>
+      (function (){var widget_id = 'sRM72L7iQn';var d=document;var w=window;function l(){
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+      
+      
+    </script>
+    <script>
+      window.onRoistatAllModulesLoaded = function () {
+          window.roistat.leadHunter.onAfterSubmit = function (leadData) {
+              try {
+                  yaCounter45168720.reachGoal('Alllids');
+              } catch (e) {}
+          }
+      };
+    </script>
+  </body>
+</html>

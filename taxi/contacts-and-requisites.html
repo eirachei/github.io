@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Контакты и реквизиты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="build/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="build/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="build/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="build/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="build/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="build/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="build/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="build/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="build/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="build/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/favicon/favicon-16x16.png">
+    <meta rel="shortcut icon" type="image/x-icon" href="build/favicon/favicon.ico">
+    <link rel="manifest" href="build/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="build/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title></title><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.8/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="build/css/style.css@v5.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <script type="text/javascript">
+      (function (w, d, nv, ls, yac) {
+          var lwait = function (w, on, trf, dly, ma, orf, osf) {
+              var pfx = "ct_await_", sfx = "_completed";
+              if (!w[pfx + on + sfx]) {
+                  var ci = clearInterval, si = setInterval, st = setTimeout, cmld = function () {
+                      if (!w[pfx + on + sfx]) {
+                          w[pfx + on + sfx] = true;
+                          if ((w[pfx + on] && (w[pfx + on].timer))) {
+                              ci(w[pfx + on].timer);
+                              w[pfx + on] = null;
+                          }
+                          orf(w[on]);
+                      }
+                  };
+                  if (!w[on] || !osf) {
+                      if (trf(w[on])) {
+                          cmld();
+                      } else {
+                          if (!w[pfx + on]) {
+                              w[pfx + on] = {
+                                  timer: si(function () {
+                                      if (trf(w[on]) || ma < ++w[pfx + on].attempt) {
+                                          cmld();
+                                      }
+                                  }, dly), attempt: 0
+                              };
+                          }
+                      }
+                  } else {
+                      if (trf(w[on])) {
+                          cmld();
+                      } else {
+                          osf(cmld);
+                          st(function () {
+                              lwait(w, on, trf, dly, ma, orf);
+                          }, 0);
+                      }
+                  }
+              }
+          };
+          var ct = function (w, d, e, c, n) {
+              var a = 'all', b = 'tou', src = b + 'c' + 'h';
+              src = 'm' + 'o' + 'd.c' + a + src;
+              var jsHost = "https://" + src, p = d.getElementsByTagName(e)[0], s = d.createElement(e);
+              var jsf = function (w, d, p, s, h, c, n, yc) {
+                  if (yc !== null) {
+                      lwait(w, 'yaCounter' + yc, function (obj) {
+                          return (obj && obj.getClientID ? true : false);
+                      }, 50, 100, function (yaCounter) {
+                          s.async = 1;
+                          s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (yaCounter && yaCounter.getClientID ? "ya_client_id" + yaCounter.getClientID() + ";" : "") + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":170523}") + ";";
+                          p.parentNode.insertBefore(s, p);
+                      }, function (f) {
+                          if (w.jQuery) {
+                              w.jQuery(d).on('yacounter' + yc + 'inited', f);
+                          }
+                      });
+                  } else {
+                      s.async = 1;
+                      s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":170523}") + ";";
+                      p.parentNode.insertBefore(s, p);
+                  }
+              };
+              if (!w.jQuery) {
+                  var jq = d.createElement(e);
+                  jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js';
+                  jq.onload = function () {
+                      lwait(w, 'jQuery', function (obj) {
+                          return (obj ? true : false);
+                      }, 30, 100, function () {
+                          jsf(w, d, d.getElementsByTagName(e)[0], s, jsHost, c, n, yac);
+                      });
+                  };
+                  p.parentNode.insertBefore(jq, p);
+              } else {
+                  jsf(w, d, p, s, jsHost, c, n, yac);
+              }
+          };
+          var gaid = function (w, d, o, ct, n) {
+              if (!!o) {
+                  lwait(w, o, function (obj) {
+                      return (obj && obj.getAll ? true : false);
+                  }, 200, (nv.userAgent.match(/Opera|OPR\//) ? 10 : 20), function (gaCounter) {
+                      var clId = null;
+                      try {
+                          var cnt = gaCounter && gaCounter.getAll ? gaCounter.getAll() : null;
+                          clId = cnt && cnt.length > 0 && !!cnt[0] && cnt[0].get ? cnt[0].get('clientId') : null;
+                      } catch (e) {
+                          console.warn("Unable to get clientId, Error: " + e.message);
+                      }
+                      ct(w, d, 'script', clId, n);
+                  }, function (f) {
+                      w[o](function () {
+                          f(w[o]);
+                      })
+                  });
+              } else {
+                  ct(w, d, 'script', null, n);
+              }
+          };
+          var cid = function () {
+              try {
+                  var m1 = d.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
+                  if (!(m1 && m1.length > 1)) return null;
+                  var m2 = decodeURIComponent(m1[1]).match(/(\d+\.\d+)$/);
+                  if (!(m2 && m2.length > 1)) return null;
+                  return m2[1]
+              } catch (err) {
+              }
+          }();
+          if (cid === null && !!w.GoogleAnalyticsObject) {
+              if (w.GoogleAnalyticsObject == 'ga_ckpr') w.ct_ga = 'ga'; else w.ct_ga = w.GoogleAnalyticsObject;
+              if (typeof Promise !== "undefined" && Promise.toString().indexOf("[native code]") !== -1) {
+                  new Promise(function (resolve) {
+                      var db, on = function () {
+                          resolve(true)
+                      }, off = function () {
+                          resolve(false)
+                      }, tryls = function tryls() {
+                          try {
+                              ls && ls.length ? off() : (ls.x = 1, ls.removeItem("x"), off());
+                          } catch (e) {
+                              nv.cookieEnabled ? on() : off();
+                          }
+                      };
+                      w.webkitRequestFileSystem ? webkitRequestFileSystem(0, 0, off, on) : "MozAppearance" in d.documentElement.style ? (db = indexedDB.open("test"), db.onerror = on, db.onsuccess = off) : /constructor/i.test(w.HTMLElement) ? tryls() : !w.indexedDB && (w.PointerEvent || w.MSPointerEvent) ? on() : off();
+                  }).then(function (pm) {
+                      if (pm) {
+                          gaid(w, d, w.ct_ga, ct, 2);
+                      } else {
+                          gaid(w, d, w.ct_ga, ct, 3);
+                      }
+                  })
+              } else {
+                  gaid(w, d, w.ct_ga, ct, 4);
+              }
+          } else {
+              ct(w, d, 'script', cid, 1);
+          }
+      })
+      (window, document, navigator, localStorage, "45168720");
+      
+      
+      
+      
+    </script>
+    <script charset="UTF-8" src="https://cdn.sendpulse.com/28edd3380a1c17cf65b137fe96516659/js/push/1278b2dbd25a513170b20562e8aee888_1.js" async></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contacts-and-requisites">
+        <h1 class="contacts-and-requisites__heading">Контакты и реквизиты</h1>
+        <div class="contacts-block">
+          <h2 class="contacts-block__heading">Контакты</h2>
+          <ul class="contacts-block-list">
+            <li class="contacts-block-list__item"><a href="tel:+78007077556">+7 (800) 707-75-56</a></li>
+            <li class="contacts-block-list__item"><a href="tel:+74951204334">+7 (495) 120-43-34</a></li>
+            <li class="contacts-block-list__item"><a href="mailto:help@unitemp.ru">help@unitemp.ru</a></li>
+          </ul>
+        </div>
+        <div class="requisites-block">
+          <h2 class="requisites-block__heading">Реквизиты ООО "ВЭНДИ"</h2>
+          <p class="requisites-block__text">
+            <u><strong>Юридический адрес:</strong></u> 105082, Россия, г. Москва, Рубцовская набережная, 3, строение 1, этаж 1, комната 31Г. <br>
+            <u><strong>Фактический адрес:</strong></u> 107113, Россия, г. Москва, 3-я Рыбинская ул., д.18, стр.22, этаж 2, офис 2-36. (вход со 2-ой Рыбинской ул.)<br><br>
+            
+            ИНН 9701086965<br>
+            КПП 770101001<br>
+            ОГРН 1177746934012<br><br>
+            
+            <u><strong>Реквизиты банка:</strong></u><br>
+            Банк: АО «АЛЬФА-БАНК» г. Москва<br>
+            Р/С  40702810801890000320 (40702-810-8-0189-0000320)<br>
+            К/С 30101810200000000593 в  ГУ БАНКА РОССИИ ПО ЦФО (30101-810-2-0000-0000593)<br>
+            БИК 044525593<br>
+            ИНН  7728168971<br>
+            ОГРН 1027700067328<br><br>
+            
+            <u><strong>Генеральный директор:</strong></u> Головин Алексей Андреевич<br>
+            <u><strong>Главный бухгалтер:</strong></u> Головин Алексей Андреевич<br><br>
+            
+            <strong>Если на первичных документах и счетах-фактурах подпись ставит доверенное лицо, просьба прикреплять копию доверенности на право подписи с образцом подписи подписанта.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
